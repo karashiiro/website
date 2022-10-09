@@ -1,5 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import Container from "../components/Container.tsx";
+import Header from "../components/Header.tsx";
 import Layout from "../components/Layout.tsx";
 import Link from "../components/Link.tsx";
 import List from "../components/List.tsx";
@@ -12,11 +13,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Container>
-          <h1 class="text-2xl">karashiiro</h1>
-          <p>
-            Empty space and empty time
-          </p>
-          <div class="h-4"></div>
+          <Header />
           <h2 class="text-lg">Find me at</h2>
           <List>
             <li><Link href="https://github.com/karashiiro">GitHub</Link></li>

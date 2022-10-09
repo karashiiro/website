@@ -1,4 +1,4 @@
-import {JSX} from "preact"
+import { JSX } from "preact"
 
 interface ContainerProps {
     children: JSX.Element | JSX.Element[] | string;

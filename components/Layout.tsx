@@ -1,4 +1,4 @@
-import {JSX} from "preact"
+import { JSX } from "preact"
 
 interface LayoutProps {
     children: JSX.Element | JSX.Element[] | string;
