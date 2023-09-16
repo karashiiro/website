@@ -9,7 +9,6 @@ export default function Header() {
       <p>
         Empty space and empty time
       </p>
-      <Link href="/blog">Blog</Link>
       <div class="h-4" />
     </>
   );
