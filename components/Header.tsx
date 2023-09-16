@@ -1,5 +1,3 @@
-import Link from "./Link.tsx";
-
 export default function Header() {
   return (
     <>
