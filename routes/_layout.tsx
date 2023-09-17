@@ -4,11 +4,13 @@ import Header from "../components/Header.tsx";
 
 export default function Layout({ Component }: LayoutProps) {
   return (
-    <main>
-      <Container>
-        <Header />
-        <Component />
-      </Container>
-    </main>
+    <>
+      <Header />
+      <main class="mx-auto max-w-screen-xl">
+        <Container>
+          <Component />
+        </Container>
+      </main>
+    </>
   );
 }
