@@ -32,9 +32,9 @@ export default function Home() {
           <Profile />
         </div>
         <div class="row-span-1 space-y-3">
-          <div>
-            <h1 id="karashiiro" class="text-4xl font-semibold">karashiiro</h1>
-          </div>
+          <h1 id="karashiiro" class="mt-3 text-4xl font-karashiiro font-semibold">
+            karashiiro
+          </h1>
           <nav class="text-sm ml-4 space-y-1">
             <ul class="flex space-x-3 list-none list-inside">
               <li>
