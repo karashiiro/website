@@ -27,21 +27,21 @@ export default function Home() {
   return (
     <div class="mx-auto max-w-screen-lg">
       <div class="mt-[25vh]" />
-      <div class="grid grid-cols-2">
+      <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="row-span-2">
           <Profile />
         </div>
         <div class="row-span-1 space-y-3">
           <h1
             id="karashiiro"
-            class="mt-3 text-4xl font-fancy font-semibold"
+            class="mt-3 text-4xl font-fancy font-semibold text-center md:text-start"
           >
             karashiiro
           </h1>
-          <nav class="ml-4 divide-dashed divide-y-2">
+          <nav class="md:ml-4 divide-dashed divide-y-2">
             <div class="mb-1">
               <h2 class="text-xl font-fancy font-semibold">Find me on</h2>
-              <ul class="flex ml-4 space-x-3 list-none list-inside">
+              <ul class="flex md:ml-4 space-x-3 list-none list-inside">
                 <li>
                   <ButtonLink href="https://github.com/karashiiro">
                     GitHub
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
             <div class="pt-1">
               <h2 class="text-lg font-fancy font-semibold">Projects</h2>
-              <ul class="flex ml-4 space-x-3 list-none list-inside">
+              <ul class="flex md:ml-4 space-x-3 list-none list-inside">
                 <li>
                   <ButtonLink href="https://github.com/Universalis-FFXIV">
                     Universalis
