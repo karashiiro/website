@@ -32,11 +32,14 @@ export default function Home() {
           <Profile />
         </div>
         <div class="row-span-1 space-y-3">
-          <h1 id="karashiiro" class="mt-3 text-4xl font-karashiiro font-semibold">
+          <h1
+            id="karashiiro"
+            class="mt-3 text-4xl font-karashiiro font-semibold"
+          >
             karashiiro
           </h1>
-          <nav class="text-sm ml-4 space-y-1">
-            <ul class="flex space-x-3 list-none list-inside">
+          <nav class="text-sm ml-4 divide-dashed divide-y-2">
+            <ul class="flex mb-1 space-x-3 list-none list-inside">
               <li>
                 <ButtonLink href="https://github.com/karashiiro">
                   GitHub
@@ -48,7 +51,7 @@ export default function Home() {
                 </ButtonLink>
               </li>
             </ul>
-            <ul class="flex space-x-3 list-none list-inside">
+            <ul class="flex pt-1 space-x-3 list-none list-inside">
               <li>
                 <ButtonLink href="https://github.com/Universalis-FFXIV">
                   Universalis
