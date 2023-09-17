@@ -15,8 +15,8 @@ function ButtonLink(
   },
 ) {
   return (
-    <a class="flex shadow rounded-full p-1 bg-blue-300" href={href}>
-      <div class="rounded-full px-2 py-1 border-dashed border-white border-2 text-blue-900 font-bold">
+    <a class="flex shadow rounded-full p-1 bg-blue-300 hover:shadow-md" href={href}>
+      <div class="rounded-full px-2 py-1 border-dashed border-white border-2 text-blue-900 font-bold text-sm">
         {children}
       </div>
     </a>
@@ -34,40 +34,46 @@ export default function Home() {
         <div class="row-span-1 space-y-3">
           <h1
             id="karashiiro"
-            class="mt-3 text-4xl font-karashiiro font-semibold"
+            class="mt-3 text-4xl font-fancy font-semibold"
           >
             karashiiro
           </h1>
-          <nav class="text-sm ml-4 divide-dashed divide-y-2">
-            <ul class="flex mb-1 space-x-3 list-none list-inside">
-              <li>
-                <ButtonLink href="https://github.com/karashiiro">
-                  GitHub
-                </ButtonLink>
-              </li>
-              <li>
-                <ButtonLink href="https://twitter.com/karashiiro1">
-                  Twitter
-                </ButtonLink>
-              </li>
-            </ul>
-            <ul class="flex pt-1 space-x-3 list-none list-inside">
-              <li>
-                <ButtonLink href="https://github.com/Universalis-FFXIV">
-                  Universalis
-                </ButtonLink>
-              </li>
-              <li>
-                <ButtonLink href="https://github.com/PrimaShouji">
-                  Prima
-                </ButtonLink>
-              </li>
-              <li>
-                <ButtonLink href="https://github.com/velcro-xiv">
-                  Velcro
-                </ButtonLink>
-              </li>
-            </ul>
+          <nav class="ml-4 divide-dashed divide-y-2">
+            <div class="mb-1">
+              <h2 class="text-xl font-fancy font-semibold">Find me on</h2>
+              <ul class="flex ml-4 space-x-3 list-none list-inside">
+                <li>
+                  <ButtonLink href="https://github.com/karashiiro">
+                    GitHub
+                  </ButtonLink>
+                </li>
+                <li>
+                  <ButtonLink href="https://twitter.com/karashiiro1">
+                    Twitter
+                  </ButtonLink>
+                </li>
+              </ul>
+            </div>
+            <div class="pt-1">
+              <h2 class="text-lg font-fancy font-semibold">Projects</h2>
+              <ul class="flex ml-4 space-x-3 list-none list-inside">
+                <li>
+                  <ButtonLink href="https://github.com/Universalis-FFXIV">
+                    Universalis
+                  </ButtonLink>
+                </li>
+                <li>
+                  <ButtonLink href="https://github.com/PrimaShouji">
+                    Prima
+                  </ButtonLink>
+                </li>
+                <li>
+                  <ButtonLink href="https://github.com/velcro-xiv">
+                    Velcro
+                  </ButtonLink>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>

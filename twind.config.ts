@@ -12,7 +12,7 @@ export default {
             "url('https://avatars.githubusercontent.com/u/49822414?v=4')",
         },
         fontFamily: {
-          "karashiiro": ['"Fugaz One"', "cursive"],
+          "fancy": ['"Fugaz One"', "cursive"],
         },
       },
     },
