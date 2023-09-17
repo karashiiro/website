@@ -1,18 +1,72 @@
+import { JSX } from "preact";
+
+function Profile() {
+  return (
+    <div class="rounded-full shadow-lg h-72 aspect-square p-1 border border-8 border-amber-300 bg-cover bg-no-repeat bg-profile">
+      <div class="rounded-full border-dashed border-4 border-amber-300 h-full aspect-square" />
+    </div>
+  );
+}
+
+function ButtonLink(
+  { href, children }: {
+    href: string;
+    children: JSX.Element[] | JSX.Element | string;
+  },
+) {
+  return (
+    <a class="flex shadow rounded-full p-1 bg-blue-300" href={href}>
+      <div class="rounded-full px-2 py-1 border-dashed border-white border-2 text-blue-900 font-bold">
+        {children}
+      </div>
+    </a>
+  );
+}
+
 export default function Home() {
   return (
-    <div>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus,
-          magna eu vehicula fermentum, mi ipsum pretium ligula, at rhoncus dolor
-          turpis quis lorem. Quisque vestibulum malesuada turpis, nec sagittis
-          felis efficitur sit amet. Aenean massa nibh, ornare sit amet tempor a,
-          tincidunt vitae lorem. In feugiat quis erat eu mollis. Vivamus
-          ultrices elit velit. Proin maximus, tellus eu maximus sodales, turpis
-          eros imperdiet diam, a faucibus ex erat ac nisl. Morbi sagittis
-          bibendum sem vel ultrices. Cras est nisl, ultrices ut ipsum rutrum,
-          egestas varius eros. Duis ultrices risus ut massa vulputate congue.
-        </p>
+    <div class="mx-auto max-w-screen-lg">
+      <div class="mt-[25vh]" />
+      <div class="grid grid-cols-2">
+        <div class="row-span-2">
+          <Profile />
+        </div>
+        <div class="row-span-1 space-y-3">
+          <div>
+            <h1 id="karashiiro" class="text-4xl font-semibold">karashiiro</h1>
+          </div>
+          <nav class="text-sm ml-4 space-y-1">
+            <ul class="flex space-x-3 list-none list-inside">
+              <li>
+                <ButtonLink href="https://github.com/karashiiro">
+                  GitHub
+                </ButtonLink>
+              </li>
+              <li>
+                <ButtonLink href="https://twitter.com/karashiiro1">
+                  Twitter
+                </ButtonLink>
+              </li>
+            </ul>
+            <ul class="flex space-x-3 list-none list-inside">
+              <li>
+                <ButtonLink href="https://github.com/Universalis-FFXIV">
+                  Universalis
+                </ButtonLink>
+              </li>
+              <li>
+                <ButtonLink href="https://github.com/PrimaShouji">
+                  Prima
+                </ButtonLink>
+              </li>
+              <li>
+                <ButtonLink href="https://github.com/velcro-xiv">
+                  Velcro
+                </ButtonLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   );

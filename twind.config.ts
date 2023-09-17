@@ -7,9 +7,6 @@ export default {
     presets: [presetTailwind() as Preset, presetAutoprefix()],
     theme: {
       extend: {
-        animation: {
-          "spin-slow": "spin 90s linear infinite",
-        },
         backgroundImage: {
           "profile":
             "url('https://avatars.githubusercontent.com/u/49822414?v=4')",
