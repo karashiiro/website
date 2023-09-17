@@ -15,11 +15,16 @@ function ButtonLink(
   },
 ) {
   return (
-    <a class="flex shadow rounded-full p-1 bg-blue-300 hover:shadow-md" href={href}>
-      <div class="rounded-full px-2 py-1 border-dashed border-white border-2 text-blue-900 font-bold text-sm">
-        {children}
-      </div>
-    </a>
+    <div class="flex">
+      <a
+        class="shadow rounded-full p-1 bg-blue-300 hover:shadow-md"
+        href={href}
+      >
+        <div class="rounded-full px-2 py-1 border-dashed border-white border-2 text-blue-900 font-bold text-sm whitespace-nowrap">
+          {children}
+        </div>
+      </a>
+    </div>
   );
 }
 
@@ -41,13 +46,13 @@ export default function Home() {
           <nav class="md:ml-4 divide-dashed divide-y-2">
             <div class="mb-1">
               <h2 class="text-xl font-fancy font-semibold">Find me on</h2>
-              <ul class="flex md:ml-4 space-x-3 list-none list-inside">
-                <li>
+              <ul class="flex flex-wrap max-w-sm -mr-3 -mb-3 md:ml-4 list-none list-inside">
+                <li class="mr-3 mb-3">
                   <ButtonLink href="https://github.com/karashiiro">
                     GitHub
                   </ButtonLink>
                 </li>
-                <li>
+                <li class="mr-3 mb-3">
                   <ButtonLink href="https://twitter.com/karashiiro1">
                     Twitter
                   </ButtonLink>
@@ -56,20 +61,20 @@ export default function Home() {
             </div>
             <div class="pt-1">
               <h2 class="text-lg font-fancy font-semibold">Projects</h2>
-              <ul class="flex md:ml-4 space-x-3 list-none list-inside">
-                <li>
+              <ul class="flex flex-wrap max-w-sm -mr-3 -mb-3 md:ml-4 list-none list-inside">
+                <li class="mr-3 mb-3">
                   <ButtonLink href="https://github.com/Universalis-FFXIV">
                     Universalis
                   </ButtonLink>
                 </li>
-                <li>
+                <li class="mr-3 mb-3">
                   <ButtonLink href="https://github.com/PrimaShouji">
                     Prima
                   </ButtonLink>
                 </li>
-                <li>
-                  <ButtonLink href="https://github.com/velcro-xiv">
-                    Velcro
+                <li class="mr-3 mb-3">
+                  <ButtonLink href="https://github.com/the-convocation/twitter-scraper">
+                    @the-convocation/twitter-scraper
                   </ButtonLink>
                 </li>
               </ul>
