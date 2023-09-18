@@ -53,7 +53,7 @@ function ProjectCard(
 ) {
   // https://www.30secondsofcode.org/css/s/nested-border-radius/
   return (
-    <div class="h-full p-1 max-w-xs rounded-[12px] shadow-md bg-blue-300 text-blue-900 text-sm">
+    <div class="h-full p-1 max-w-xs rounded-[12px] shadow-md bg-pink-300 text-pink-900 text-sm">
       <div class="flex flex-col place-content-between h-full px-2 py-1 rounded-[8px] border-dashed border-2 border-white">
         <div>
           <h3 class="text-lg font-fancy">{name}</h3>
@@ -76,14 +76,14 @@ function MyProjects() {
           description="A crowdsourced market board API for FFXIV."
         >
           <ButtonLink
-            variant="pink"
+            variant="blue"
             href="https://universalis.app"
             gh="https://github.com/Universalis-FFXIV/mogboard-next"
           >
             Website
           </ButtonLink>
           <ButtonLink
-            variant="pink"
+            variant="blue"
             href="https://docs.universalis.app"
             gh="https://github.com/Universalis-FFXIV/Universalis"
           >
@@ -97,7 +97,7 @@ function MyProjects() {
           description="A list of websites, APIs, and tools for FFXIV."
         >
           <ButtonLink
-            variant="pink"
+            variant="blue"
             href="https://karashiiro.github.io/xiv-resources/"
             gh="https://github.com/karashiiro/xiv-resources"
           >
@@ -111,7 +111,7 @@ function MyProjects() {
           description="A port of n0madic's Go Twitter scraping library to Node.js."
         >
           <ButtonLink
-            variant="pink"
+            variant="blue"
             href="https://www.npmjs.com/package/@the-convocation/twitter-scraper"
             gh="https://github.com/the-convocation/twitter-scraper"
           >
@@ -125,7 +125,7 @@ function MyProjects() {
           description="Go scraper for The Lodestone."
         >
           <ButtonLink
-            variant="pink"
+            variant="blue"
             href="https://github.com/xivapi/godestone"
             gh="https://github.com/xivapi/godestone"
           >
