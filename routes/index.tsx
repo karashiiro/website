@@ -54,7 +54,7 @@ ButtonLinkList.Item = ({ href, children }: {
 
 function MyLinks() {
   return (
-    <nav class="m-auto md:ml-4 max-w-sm divide-dashed divide-y-2">
+    <nav class="m-auto md:ml-4 max-w-xs divide-dashed divide-y-2">
       <div class="mb-1">
         <h2 class="text-xl font-fancy font-semibold">Find me on</h2>
         <ButtonLinkList>
@@ -75,11 +75,11 @@ function MyLinks() {
           <ButtonLinkList.Item href="https://github.com/PrimaShouji">
             Prima
           </ButtonLinkList.Item>
-          <ButtonLinkList.Item href="https://github.com/karashiiro/xiv-resources">
-            xiv-resources
-          </ButtonLinkList.Item>
           <ButtonLinkList.Item href="https://github.com/the-convocation/twitter-scraper">
             @the-convocation/twitter-scraper
+          </ButtonLinkList.Item>
+          <ButtonLinkList.Item href="https://github.com/karashiiro/xiv-resources">
+            xiv-resources
           </ButtonLinkList.Item>
         </ButtonLinkList>
       </div>
