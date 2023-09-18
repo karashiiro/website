@@ -29,6 +29,61 @@ function ButtonLink(
   );
 }
 
+function ButtonLinkList({ children }: {
+  children: JSX.Element[] | JSX.Element | string;
+}) {
+  return (
+    <ul class="flex flex-wrap max-w-sm -mr-3 -mb-3 md:ml-4 list-none list-inside">
+      {children}
+    </ul>
+  );
+}
+
+ButtonLinkList.Item = ({ href, children }: {
+  href: string;
+  children: JSX.Element[] | JSX.Element | string;
+}) => {
+  return (
+    <li class="mr-3 mb-3">
+      <ButtonLink href={href}>
+        {children}
+      </ButtonLink>
+    </li>
+  );
+};
+
+function MyLinks() {
+  return (
+    <nav class="md:ml-4 divide-dashed divide-y-2">
+      <div class="mb-1">
+        <h2 class="text-xl font-fancy font-semibold">Find me on</h2>
+        <ButtonLinkList>
+          <ButtonLinkList.Item href="https://github.com/karashiiro">
+            GitHub
+          </ButtonLinkList.Item>
+          <ButtonLinkList.Item href="https://twitter.com/karashiiro1">
+            Twitter
+          </ButtonLinkList.Item>
+        </ButtonLinkList>
+      </div>
+      <div class="pt-1">
+        <h2 class="text-lg font-fancy font-semibold">Projects</h2>
+        <ButtonLinkList>
+          <ButtonLinkList.Item href="https://github.com/Universalis-FFXIV">
+            Universalis
+          </ButtonLinkList.Item>
+          <ButtonLinkList.Item href="https://github.com/PrimaShouji">
+            Prima
+          </ButtonLinkList.Item>
+          <ButtonLinkList.Item href="https://github.com/the-convocation/twitter-scraper">
+            @the-convocation/twitter-scraper
+          </ButtonLinkList.Item>
+        </ButtonLinkList>
+      </div>
+    </nav>
+  );
+}
+
 export default function Home() {
   return (
     <div class="mx-auto max-w-screen-lg">
@@ -46,43 +101,7 @@ export default function Home() {
           >
             karashiiro
           </h1>
-          <nav class="md:ml-4 divide-dashed divide-y-2">
-            <div class="mb-1">
-              <h2 class="text-xl font-fancy font-semibold">Find me on</h2>
-              <ul class="flex flex-wrap max-w-sm -mr-3 -mb-3 md:ml-4 list-none list-inside">
-                <li class="mr-3 mb-3">
-                  <ButtonLink href="https://github.com/karashiiro">
-                    GitHub
-                  </ButtonLink>
-                </li>
-                <li class="mr-3 mb-3">
-                  <ButtonLink href="https://twitter.com/karashiiro1">
-                    Twitter
-                  </ButtonLink>
-                </li>
-              </ul>
-            </div>
-            <div class="pt-1">
-              <h2 class="text-lg font-fancy font-semibold">Projects</h2>
-              <ul class="flex flex-wrap max-w-sm -mr-3 -mb-3 md:ml-4 list-none list-inside">
-                <li class="mr-3 mb-3">
-                  <ButtonLink href="https://github.com/Universalis-FFXIV">
-                    Universalis
-                  </ButtonLink>
-                </li>
-                <li class="mr-3 mb-3">
-                  <ButtonLink href="https://github.com/PrimaShouji">
-                    Prima
-                  </ButtonLink>
-                </li>
-                <li class="mr-3 mb-3">
-                  <ButtonLink href="https://github.com/the-convocation/twitter-scraper">
-                    @the-convocation/twitter-scraper
-                  </ButtonLink>
-                </li>
-              </ul>
-            </div>
-          </nav>
+          <MyLinks />
         </div>
       </div>
     </div>
