@@ -67,13 +67,16 @@ function MyLinks() {
         </ButtonLinkList>
       </div>
       <div class="pt-1">
-        <h2 class="text-lg font-fancy font-semibold">Projects</h2>
+        <h2 class="text-lg font-fancy font-semibold">Some projects</h2>
         <ButtonLinkList>
           <ButtonLinkList.Item href="https://github.com/Universalis-FFXIV">
             Universalis
           </ButtonLinkList.Item>
-          <ButtonLinkList.Item href="https://github.com/PrimaShouji">
-            Prima
+          <ButtonLinkList.Item href="https://github.com/karashiiro/lodestone-when">
+            lodestone-when
+          </ButtonLinkList.Item>
+          <ButtonLinkList.Item href="https://github.com/karashiiro/patch-tool">
+            PSO2 Patch File Viewer
           </ButtonLinkList.Item>
           <ButtonLinkList.Item href="https://github.com/the-convocation/twitter-scraper">
             @the-convocation/twitter-scraper
