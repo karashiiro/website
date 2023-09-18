@@ -75,6 +75,9 @@ function MyLinks() {
           <ButtonLinkList.Item href="https://github.com/PrimaShouji">
             Prima
           </ButtonLinkList.Item>
+          <ButtonLinkList.Item href="https://github.com/karashiiro/xiv-resources">
+            xiv-resources
+          </ButtonLinkList.Item>
           <ButtonLinkList.Item href="https://github.com/the-convocation/twitter-scraper">
             @the-convocation/twitter-scraper
           </ButtonLinkList.Item>
