@@ -153,7 +153,7 @@ export default function Home() {
             <MyLinks />
           </div>
         </div>
-        <div class="mt-2 md:mt-10 p-4">
+        <div class="mt-2 md:mt-10 px-4 md:px-10">
           <h2 class="text-xl font-fancy font-semibold">Projects</h2>
           <MyProjects />
         </div>
