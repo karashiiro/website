@@ -1,6 +1,8 @@
 import { ComponentChildren, JSX } from "preact";
 import { ButtonLink } from "../components/ButtonLink.tsx";
 import { Profile } from "../components/Profile.tsx";
+import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-github.tsx";
+import IconBrandTwitter from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-twitter.tsx";
 
 type ExtractProps<T> = T extends (props: infer U) => JSX.Element ? U : never;
 
@@ -27,16 +29,13 @@ ButtonLinkList.Item = (
 function MyLinks() {
   return (
     <nav class="m-auto md:ml-4 max-w-xs md:max-w-sm divide-dashed divide-y-2">
-      <div class="mb-1">
-        <h2 class="text-xl font-fancy font-semibold">Find me on</h2>
-        <ButtonLinkList>
-          <ButtonLinkList.Item href="https://github.com/karashiiro">
-            GitHub
-          </ButtonLinkList.Item>
-          <ButtonLinkList.Item href="https://twitter.com/karashiiro1">
-            Twitter
-          </ButtonLinkList.Item>
-        </ButtonLinkList>
+      <div class="flex flex-row">
+        <a href="https://github.com/karashiiro" tabIndex={0}>
+          <IconBrandGithub class="text-slate-400 hover:text-slate-600" />
+        </a>
+        <a href="https://twitter.com/karashiiro1" tabIndex={0}>
+          <IconBrandTwitter class="text-slate-400 hover:text-slate-600" />
+        </a>
       </div>
     </nav>
   );
