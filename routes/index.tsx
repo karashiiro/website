@@ -2,6 +2,8 @@ import { JSX } from "preact";
 import { ButtonLink } from "../components/ButtonLink.tsx";
 import { Profile } from "../components/Profile.tsx";
 
+type ExtractProps<T> = T extends (props: infer U) => JSX.Element ? U : never;
+
 function ButtonLinkList({ children }: {
   children: (JSX.Element | string)[] | JSX.Element | string;
 }) {
@@ -12,14 +14,12 @@ function ButtonLinkList({ children }: {
   );
 }
 
-ButtonLinkList.Item = ({ href, gh, children }: {
-  href: string;
-  gh?: string;
-  children: (JSX.Element | string)[] | JSX.Element | string;
-}) => {
+ButtonLinkList.Item = (
+  { href, gh, variant, children }: ExtractProps<typeof ButtonLink>,
+) => {
   return (
     <li class="mr-3 mb-3">
-      <ButtonLink href={href} gh={gh}>
+      <ButtonLink href={href} gh={gh} variant={variant}>
         {children}
       </ButtonLink>
     </li>
@@ -75,22 +75,24 @@ function MyLinks() {
 
 export default function Home() {
   return (
-    <div class="mx-auto">
-      <div class="mt-[6vh] md:mt-[25vh]" />
-      <div class="grid grid-cols-1 md:grid-cols-2">
-        <div class="row-span-2">
-          <div class="mx-auto h-72 aspect-square">
-            <Profile />
+    <div class="flex">
+      <div class="mx-auto">
+        <div class="mt-[6vh] md:mt-[25vh]" />
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="row-span-2">
+            <div class="mx-auto h-72 aspect-square">
+              <Profile />
+            </div>
           </div>
-        </div>
-        <div class="row-span-1 space-y-3">
-          <h1
-            id="karashiiro"
-            class="text-4xl font-fancy font-semibold text-center md:text-start"
-          >
-            karashiiro
-          </h1>
-          <MyLinks />
+          <div class="row-span-1 space-y-3">
+            <h1
+              id="karashiiro"
+              class="text-4xl font-fancy font-semibold text-center md:text-start"
+            >
+              karashiiro
+            </h1>
+            <MyLinks />
+          </div>
         </div>
       </div>
     </div>

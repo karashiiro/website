@@ -1,17 +1,27 @@
 import { JSX } from "preact";
 import { GitHub } from "./GitHub.tsx";
 
+const variants = {
+  blue: "bg-blue-300 text-blue-900",
+  pink: "bg-pink-300 text-pink-900",
+};
+
 export function ButtonLink(
-  { href, gh, children }: {
+  { href, gh, variant, children }: {
     href: string;
     gh?: string;
+    variant?: keyof typeof variants;
     children: (JSX.Element | string)[] | JSX.Element | string;
   },
 ) {
   return (
-    <div class="relative flex rounded-full font-bold text-sm text-blue-900 shadow-md hover:shadow-lg">
+    <div
+      class={`relative flex rounded-full font-bold text-sm shadow-md hover:shadow-lg ${
+        variants[variant ?? "blue"]
+      }`}
+    >
       <a
-        class="rounded-full p-1 bg-blue-300"
+        class="rounded-full p-1"
         tabIndex={0}
         href={href}
       >
