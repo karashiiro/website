@@ -40,7 +40,7 @@ function MyLinks() {
           </ButtonLinkList.Item>
         </ButtonLinkList>
       </div>
-      <div class="pt-1">
+      <div class="pt-1 mb-1">
         <h2 class="text-lg font-fancy font-semibold">Some projects</h2>
         <ButtonLinkList>
           <ButtonLinkList.Item
@@ -56,6 +56,12 @@ function MyLinks() {
             lodestone-when
           </ButtonLinkList.Item>
           <ButtonLinkList.Item
+            href="https://github.com/karashiiro/gittlz"
+            gh="https://github.com/karashiiro/gittlz"
+          >
+            Gittlz
+          </ButtonLinkList.Item>
+          <ButtonLinkList.Item
             href="https://karashiiro.github.io/patch-tool"
             gh="https://github.com/karashiiro/patch-tool"
           >
@@ -67,11 +73,28 @@ function MyLinks() {
           >
             xiv-resources
           </ButtonLinkList.Item>
+        </ButtonLinkList>
+      </div>
+      <div class="pt-1">
+        <h2 class="text-lg font-fancy font-semibold">Some libraries</h2>
+        <ButtonLinkList>
           <ButtonLinkList.Item
             href="https://github.com/the-convocation/twitter-scraper"
             gh="https://github.com/the-convocation/twitter-scraper"
           >
             @the-convocation/twitter-scraper
+          </ButtonLinkList.Item>
+          <ButtonLinkList.Item
+            href="https://github.com/xivapi/godestone"
+            gh="https://github.com/xivapi/godestone"
+          >
+            xivapi/godestone
+          </ButtonLinkList.Item>
+          <ButtonLinkList.Item
+            href="https://github.com/karashiiro/blowfish-tables"
+            gh="https://github.com/karashiiro/blowfish-tables"
+          >
+            blowfish-tables
           </ButtonLinkList.Item>
         </ButtonLinkList>
       </div>
@@ -92,7 +115,7 @@ export default function Home() {
         <div class="row-span-1 space-y-3">
           <h1
             id="karashiiro"
-            class="mt-3 text-4xl font-fancy font-semibold text-center md:text-start"
+            class="text-4xl font-fancy font-semibold text-center md:text-start"
           >
             karashiiro
           </h1>
