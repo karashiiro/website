@@ -140,7 +140,7 @@ function MyLinks() {
 export default function Home() {
   return (
     <div class="mx-auto">
-      <div class="mt-[25vh]" />
+      <div class="mt-[6vh] md:mt-[25vh]" />
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="row-span-2">
           <div class="mx-auto h-72 aspect-square">
