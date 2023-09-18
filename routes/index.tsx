@@ -33,7 +33,7 @@ function ButtonLink(
       {gh && (
         <a
           class="absolute rounded-full right-3 top-[0.65rem]"
-          tabIndex={0}
+          tabIndex={gh === href ? -1 : 0}
           href={gh}
         >
           <GitHub size={18} color="rgba(30, 58, 138, var(--tw-text-opacity))" />
