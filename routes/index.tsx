@@ -33,7 +33,7 @@ function ButtonLinkList({ children }: {
   children: JSX.Element[] | JSX.Element | string;
 }) {
   return (
-    <ul class="flex flex-wrap max-w-sm -mr-3 -mb-3 md:ml-4 list-none list-inside">
+    <ul class="flex flex-wrap -mr-3 -mb-3 md:ml-4 list-none list-inside">
       {children}
     </ul>
   );
@@ -54,7 +54,7 @@ ButtonLinkList.Item = ({ href, children }: {
 
 function MyLinks() {
   return (
-    <nav class="md:ml-4 divide-dashed divide-y-2">
+    <nav class="m-auto md:ml-4 max-w-sm divide-dashed divide-y-2">
       <div class="mb-1">
         <h2 class="text-xl font-fancy font-semibold">Find me on</h2>
         <ButtonLinkList>
@@ -89,7 +89,7 @@ function MyLinks() {
 
 export default function Home() {
   return (
-    <div class="mx-auto max-w-screen-lg">
+    <div class="mx-auto">
       <div class="mt-[25vh]" />
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="row-span-2">
@@ -106,6 +106,18 @@ export default function Home() {
           </h1>
           <MyLinks />
         </div>
+      </div>
+      <div class="flex px-16 mt-10 -mr-1 text-4xl text-pink-400">
+        <i class="devicon-csharp-plain drop-shadow mr-1" />
+        <i class="devicon-typescript-plain drop-shadow mr-1" />
+        <i class="devicon-javascript-plain drop-shadow mr-1" />
+        <i class="devicon-python-plain drop-shadow mr-1" />
+        <i class="devicon-go-plain drop-shadow mr-1" />
+        <i class="devicon-rust-plain drop-shadow mr-1" />
+        <i class="devicon-fsharp-plain drop-shadow mr-1" />
+        <i class="devicon-kotlin-plain drop-shadow mr-1" />
+        <i class="devicon-java-plain drop-shadow mr-1" />
+        <i class="devicon-cplusplus-plain drop-shadow mr-1" />
       </div>
     </div>
   );
