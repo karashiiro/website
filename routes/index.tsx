@@ -34,7 +34,9 @@ export default function Home() {
       <div class="mt-[25vh]" />
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="row-span-2">
-          <Profile />
+          <div class="mx-auto h-72 aspect-square">
+            <Profile />
+          </div>
         </div>
         <div class="row-span-1 space-y-3">
           <h1
