@@ -115,7 +115,7 @@ function MyProjects() {
             href="https://www.npmjs.com/package/@the-convocation/twitter-scraper"
             gh="https://github.com/the-convocation/twitter-scraper"
           >
-            NPM
+            npm
           </ButtonLink>
         </ProjectCard>
       </div>
