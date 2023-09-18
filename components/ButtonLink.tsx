@@ -7,10 +7,18 @@ const variants = {
 
 const variantDefault = "blue";
 
+const shapes = {
+  pill: "px-2 py-1",
+  circle: "p-1 aspect-square",
+};
+
+const shapeDefault = "pill";
+
 export function ButtonLink(
-  { href, variant, children }: {
+  { href, variant, shape, children }: {
     href: string;
     variant?: keyof typeof variants;
+    shape?: keyof typeof shapes;
     children: ComponentChildren;
   },
 ) {
@@ -21,7 +29,11 @@ export function ButtonLink(
         tabIndex={0}
         href={href}
       >
-        <div class="rounded-full px-2 py-1 border-dashed border-white border-2 whitespace-nowrap">
+        <div
+          class={`rounded-full border-dashed border-white border-2 whitespace-nowrap ${
+            shapes[shape ?? shapeDefault]
+          }`}
+        >
           {children}
         </div>
       </a>

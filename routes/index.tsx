@@ -29,29 +29,13 @@ ButtonLinkList.Item = (
 function MyLinks() {
   return (
     <nav class="m-auto md:ml-4 max-w-xs md:max-w-sm divide-dashed divide-y-2">
-      <div class="flex flex-row font-bold text-sm text-blue-900 text-center">
-        <div class="mr-1 flex rounded-full shadow-md hover:shadow-lg duration-100">
-          <a
-            class="rounded-full p-1 bg-blue-300"
-            href="https://github.com/karashiiro"
-            tabIndex={0}
-          >
-            <div class="rounded-full p-1 border-dashed border-2 border-white">
-              <IconBrandGithub />
-            </div>
-          </a>
-        </div>
-        <div class="mr-1 flex rounded-full shadow-md hover:shadow-lg duration-100">
-          <a
-            class="rounded-full p-1 bg-blue-300"
-            href="https://twitter.com/karashiiro1"
-            tabIndex={0}
-          >
-            <div class="rounded-full p-1 border-dashed border-2 border-white">
-              <IconBrandTwitter />
-            </div>
-          </a>
-        </div>
+      <div class="flex flex-row space-x-1">
+        <ButtonLink shape="circle" href="https://github.com/karashiiro">
+          <IconBrandGithub />
+        </ButtonLink>
+        <ButtonLink shape="circle" href="https://twitter.com/karashiiro1">
+          <IconBrandTwitter />
+        </ButtonLink>
       </div>
     </nav>
   );
