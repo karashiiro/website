@@ -1,4 +1,4 @@
-import { JSX } from "preact";
+import { ComponentChildren } from "preact";
 import { GitHub } from "./GitHub.tsx";
 
 const variants = {
@@ -11,17 +11,13 @@ export function ButtonLink(
     href: string;
     gh?: string;
     variant?: keyof typeof variants;
-    children: (JSX.Element | string)[] | JSX.Element | string;
+    children: ComponentChildren;
   },
 ) {
   return (
-    <div
-      class={`relative flex rounded-full font-bold text-sm shadow-md hover:shadow-lg ${
-        variants[variant ?? "blue"]
-      }`}
-    >
+    <div class="relative flex rounded-full shadow-md hover:shadow-lg font-bold text-sm text-center">
       <a
-        class="rounded-full p-1"
+        class={`rounded-full p-1 ${variants[variant ?? "blue"]}`}
         tabIndex={0}
         href={href}
       >
