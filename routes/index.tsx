@@ -15,13 +15,11 @@ function ButtonLinkList({ children }: {
 }
 
 ButtonLinkList.Item = (
-  { href, gh, variant, children }: ExtractProps<typeof ButtonLink>,
+  props: ExtractProps<typeof ButtonLink>,
 ) => {
   return (
     <li class="mr-3 mb-3">
-      <ButtonLink href={href} gh={gh} variant={variant}>
-        {children}
-      </ButtonLink>
+      <ButtonLink {...props} />
     </li>
   );
 };
@@ -75,19 +73,11 @@ function MyProjects() {
           name="Universalis"
           description="A crowdsourced market board API for FFXIV."
         >
-          <ButtonLink
-            variant="blue"
-            href="https://universalis.app"
-            gh="https://github.com/Universalis-FFXIV/mogboard-next"
-          >
+          <ButtonLink href="https://universalis.app">
             Website
           </ButtonLink>
-          <ButtonLink
-            variant="blue"
-            href="https://docs.universalis.app"
-            gh="https://github.com/Universalis-FFXIV/Universalis"
-          >
-            API
+          <ButtonLink href="https://github.com/Universalis-FFXIV/Universalis">
+            Repo
           </ButtonLink>
         </ProjectCard>
       </div>
@@ -96,12 +86,11 @@ function MyProjects() {
           name="XIV Resources"
           description="A list of websites, APIs, and tools for FFXIV."
         >
-          <ButtonLink
-            variant="blue"
-            href="https://karashiiro.github.io/xiv-resources/"
-            gh="https://github.com/karashiiro/xiv-resources"
-          >
+          <ButtonLink href="https://karashiiro.github.io/xiv-resources/">
             Website
+          </ButtonLink>
+          <ButtonLink href="https://github.com/karashiiro/xiv-resources">
+            Repo
           </ButtonLink>
         </ProjectCard>
       </div>
@@ -110,12 +99,11 @@ function MyProjects() {
           name="twitter-scraper"
           description="A port of n0madic's Go Twitter scraping library to Node.js."
         >
-          <ButtonLink
-            variant="blue"
-            href="https://www.npmjs.com/package/@the-convocation/twitter-scraper"
-            gh="https://github.com/the-convocation/twitter-scraper"
-          >
+          <ButtonLink href="https://www.npmjs.com/package/@the-convocation/twitter-scraper">
             npm
+          </ButtonLink>
+          <ButtonLink href="https://github.com/the-convocation/twitter-scraper">
+            Repo
           </ButtonLink>
         </ProjectCard>
       </div>
@@ -124,11 +112,7 @@ function MyProjects() {
           name="godestone"
           description="Go scraper for The Lodestone."
         >
-          <ButtonLink
-            variant="blue"
-            href="https://github.com/xivapi/godestone"
-            gh="https://github.com/xivapi/godestone"
-          >
+          <ButtonLink href="https://github.com/xivapi/godestone">
             Repo
           </ButtonLink>
         </ProjectCard>
