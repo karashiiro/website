@@ -31,10 +31,10 @@ function MyLinks() {
     <nav class="m-auto md:ml-4 max-w-xs md:max-w-sm divide-dashed divide-y-2">
       <div class="flex flex-row">
         <a href="https://github.com/karashiiro" tabIndex={0}>
-          <IconBrandGithub class="text-slate-400 hover:text-slate-600" />
+          <IconBrandGithub class="text-slate-400 hover:text-slate-700 duration-100" />
         </a>
         <a href="https://twitter.com/karashiiro1" tabIndex={0}>
-          <IconBrandTwitter class="text-slate-400 hover:text-slate-600" />
+          <IconBrandTwitter class="text-slate-400 hover:text-slate-700 duration-100" />
         </a>
       </div>
     </nav>
