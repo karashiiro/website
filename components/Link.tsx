@@ -5,6 +5,7 @@ interface LinkProps {
   children: (JSX.Element | string)[] | JSX.Element | string;
 }
 
+// TODO: Delete if unused
 export default function Link(props: LinkProps) {
   return (
     <a
