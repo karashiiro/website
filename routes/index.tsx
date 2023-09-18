@@ -50,34 +50,11 @@ function MyLinks() {
             Universalis
           </ButtonLinkList.Item>
           <ButtonLinkList.Item
-            href="https://karashiiro.github.io/lodestone-when"
-            gh="https://github.com/karashiiro/lodestone-when"
-          >
-            lodestone-when
-          </ButtonLinkList.Item>
-          <ButtonLinkList.Item
-            href="https://github.com/karashiiro/gittlz"
-            gh="https://github.com/karashiiro/gittlz"
-          >
-            Gittlz
-          </ButtonLinkList.Item>
-          <ButtonLinkList.Item
-            href="https://karashiiro.github.io/patch-tool"
-            gh="https://github.com/karashiiro/patch-tool"
-          >
-            PSO2 Patch File Viewer
-          </ButtonLinkList.Item>
-          <ButtonLinkList.Item
             href="https://github.com/karashiiro/xiv-resources"
             gh="https://github.com/karashiiro/xiv-resources"
           >
             xiv-resources
           </ButtonLinkList.Item>
-        </ButtonLinkList>
-      </div>
-      <div class="pt-1">
-        <h2 class="text-lg font-fancy font-semibold">Some libraries</h2>
-        <ButtonLinkList>
           <ButtonLinkList.Item
             href="https://github.com/the-convocation/twitter-scraper"
             gh="https://github.com/the-convocation/twitter-scraper"
@@ -89,12 +66,6 @@ function MyLinks() {
             gh="https://github.com/xivapi/godestone"
           >
             xivapi/godestone
-          </ButtonLinkList.Item>
-          <ButtonLinkList.Item
-            href="https://github.com/karashiiro/blowfish-tables"
-            gh="https://github.com/karashiiro/blowfish-tables"
-          >
-            blowfish-tables
           </ButtonLinkList.Item>
         </ButtonLinkList>
       </div>
