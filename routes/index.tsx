@@ -131,14 +131,16 @@ export default function Home() {
               <Profile />
             </div>
           </div>
-          <div class="row-span-1 space-y-3">
-            <h1
-              id="karashiiro"
-              class="text-4xl font-fancy font-semibold text-center md:text-start"
-            >
-              karashiiro
-            </h1>
-            <MyLinks />
+          <div class="row-span-1">
+            <div class="my-3 md:ml-2 md:mt-[12vh] space-y-3">
+              <h1
+                id="karashiiro"
+                class="text-4xl font-fancy font-semibold text-center md:text-start"
+              >
+                karashiiro
+              </h1>
+              <MyLinks />
+            </div>
           </div>
         </div>
         <div class="mt-2 md:mt-10 px-4 md:px-10">
