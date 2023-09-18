@@ -18,6 +18,7 @@ function ButtonLink(
     <div class="flex">
       <a
         class="shadow rounded-full p-1 bg-blue-300 hover:shadow-md"
+        tabIndex={0}
         href={href}
       >
         <div class="rounded-full px-2 py-1 border-dashed border-white border-2 text-blue-900 font-bold text-sm whitespace-nowrap">
