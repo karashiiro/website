@@ -107,22 +107,6 @@ export default function Home() {
           <MyLinks />
         </div>
       </div>
-      <div class="flex mt-10 md:ml-12 p-4">
-        <div class="flex p-1 bg-pink-400 shadow-md rounded-md">
-          <div class="flex min-w-auto px-2 py-1 rounded-md border-dashed border-white border-2 text-4xl text-white">
-            <i width={36} class="devicon-csharp-plain mr-1" />
-            <i width={36} class="devicon-typescript-plain mr-1" />
-            <i width={36} class="devicon-javascript-plain mr-1" />
-            <i width={36} class="devicon-python-plain mr-1" />
-            <i width={36} class="devicon-go-plain mr-1" />
-            <i width={36} class="devicon-rust-plain mr-1" />
-            <i width={36} class="devicon-fsharp-plain mr-1" />
-            <i width={36} class="devicon-kotlin-plain mr-1" />
-            <i width={36} class="devicon-java-plain mr-1" />
-            <i width={36} class="devicon-cplusplus-plain" />
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
