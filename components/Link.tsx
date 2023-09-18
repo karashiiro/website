@@ -2,7 +2,7 @@ import { JSX } from "preact";
 
 interface LinkProps {
   href: string;
-  children: JSX.Element | JSX.Element[] | string;
+  children: (JSX.Element | string)[] | JSX.Element | string;
 }
 
 export default function Link(props: LinkProps) {
