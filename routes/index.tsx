@@ -84,11 +84,11 @@ function MyProjects() {
         >
           <div class={langClasses}>
             <i />
-            <i class="devicon-csharp-plain" />
-            <i class="devicon-typescript-plain" />
-            <i class="devicon-nextjs-plain" />
-            <i class="devicon-rust-plain" />
-            <i class="devicon-docker-plain" />
+            <i title="C#" class="devicon-csharp-plain" />
+            <i title="TypeScript" class="devicon-typescript-plain" />
+            <i title="Next.js" class="devicon-nextjs-plain" />
+            <i title="Rust" class="devicon-rust-plain" />
+            <i title="Docker" class="devicon-docker-plain" />
           </div>
           <ButtonLink href="https://universalis.app">
             Website
@@ -109,7 +109,7 @@ function MyProjects() {
             <i />
             <i />
             <i />
-            <i class="devicon-javascript-plain" />
+            <i title="JavaScript" class="devicon-javascript-plain" />
           </div>
           <ButtonLink href="https://karashiiro.github.io/xiv-resources/">
             Website
@@ -128,9 +128,9 @@ function MyProjects() {
             <i />
             <i />
             <i />
-            <i class="devicon-go-plain" />
-            <i class="devicon-python-plain" />
-            <i class="devicon-javascript-plain" />
+            <i title="Go" class="devicon-go-plain" />
+            <i title="Python" class="devicon-python-plain" />
+            <i title="JavaScript" class="devicon-javascript-plain" />
           </div>
           <ButtonLink href="https://karashiiro.github.io/lodestone-when/">
             Website
@@ -148,10 +148,13 @@ function MyProjects() {
           <div class={langClasses}>
             <i />
             <i />
-            <i class="devicon-typescript-plain" />
-            <i class="devicon-react-plain" />
-            <i class="devicon-python-plain" />
-            <i class="devicon-amazonwebservices-plain" />
+            <i title="TypeScript" class="devicon-typescript-plain" />
+            <i title="React" class="devicon-react-plain" />
+            <i title="Python" class="devicon-python-plain" />
+            <i
+              title="Amazon Web Services"
+              class="devicon-amazonwebservices-plain"
+            />
           </div>
           <ButtonLink href="https://karashiiro.github.io/patch-tool">
             Website
@@ -172,7 +175,7 @@ function MyProjects() {
             <i />
             <i />
             <i />
-            <i class="devicon-typescript-plain" />
+            <i title="TypeScript" class="devicon-typescript-plain" />
           </div>
           <ButtonLink href="https://www.npmjs.com/package/@the-convocation/twitter-scraper">
             npm
@@ -191,9 +194,9 @@ function MyProjects() {
             <i />
             <i />
             <i />
-            <i class="devicon-go-plain" />
-            <i class="devicon-git-plain" />
-            <i class="devicon-docker-plain" />
+            <i title="Go" class="devicon-go-plain" />
+            <i title="Git" class="devicon-git-plain" />
+            <i title="Docker" class="devicon-docker-plain" />
           </div>
           <ButtonLink href="https://hub.docker.com/r/karashiiro/gittlz">
             Docker Hub
