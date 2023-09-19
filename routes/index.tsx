@@ -73,6 +73,8 @@ function ProjectCard(
 }
 
 function MyProjects() {
+  const langClasses =
+    "absolute inline-grid grid-rows-2 grid-cols-3 -right-1 bottom-0 text-lg";
   return (
     <div class="grid grid-cols-1 md:grid-cols-3">
       <div class="mt-2 p-1">
@@ -80,10 +82,13 @@ function MyProjects() {
           name="Universalis"
           description="A crowdsourced market board API for FFXIV."
         >
-          <div class="absolute right-1 -bottom-1 space-x-1 text-lg">
+          <div class={langClasses}>
+            <i />
             <i class="devicon-csharp-plain" />
             <i class="devicon-typescript-plain" />
+            <i class="devicon-nextjs-plain" />
             <i class="devicon-rust-plain" />
+            <i class="devicon-docker-plain" />
           </div>
           <ButtonLink href="https://universalis.app">
             Website
@@ -98,7 +103,12 @@ function MyProjects() {
           name="XIV Resources"
           description="A list of websites, APIs, and tools for FFXIV."
         >
-          <div class="absolute right-1 -bottom-1 space-x-1 text-lg">
+          <div class={langClasses}>
+            <i />
+            <i />
+            <i />
+            <i />
+            <i />
             <i class="devicon-javascript-plain" />
           </div>
           <ButtonLink href="https://karashiiro.github.io/xiv-resources/">
@@ -114,7 +124,10 @@ function MyProjects() {
           name="Lodestone When"
           description="Estimate when a FFXIV character was created with just its Lodestone ID!"
         >
-          <div class="absolute right-1 -bottom-1 space-x-1 text-lg">
+          <div class={langClasses}>
+            <i />
+            <i />
+            <i />
             <i class="devicon-go-plain" />
             <i class="devicon-python-plain" />
             <i class="devicon-javascript-plain" />
@@ -132,9 +145,13 @@ function MyProjects() {
           name="PSO2 Patch File Viewer"
           description="Simple patch file viewer for PSO2."
         >
-          <div class="absolute right-1 -bottom-1 space-x-1 text-lg">
+          <div class={langClasses}>
+            <i />
+            <i />
             <i class="devicon-typescript-plain" />
+            <i class="devicon-react-plain" />
             <i class="devicon-python-plain" />
+            <i class="devicon-amazonwebservices-plain" />
           </div>
           <ButtonLink href="https://karashiiro.github.io/patch-tool">
             Website
@@ -149,7 +166,12 @@ function MyProjects() {
           name="twitter-scraper"
           description="A port of n0madic's Go Twitter scraping library to Node.js."
         >
-          <div class="absolute right-1 -bottom-1 space-x-1 text-lg">
+          <div class={langClasses}>
+            <i />
+            <i />
+            <i />
+            <i />
+            <i />
             <i class="devicon-typescript-plain" />
           </div>
           <ButtonLink href="https://www.npmjs.com/package/@the-convocation/twitter-scraper">
@@ -165,8 +187,13 @@ function MyProjects() {
           name="Gittlz"
           description="A Git server for the laziest of us. Write and test your Git utilities without any hassle."
         >
-          <div class="absolute right-1 -bottom-1 space-x-1 text-lg">
+          <div class={langClasses}>
+            <i />
+            <i />
+            <i />
             <i class="devicon-go-plain" />
+            <i class="devicon-git-plain" />
+            <i class="devicon-docker-plain" />
           </div>
           <ButtonLink href="https://hub.docker.com/r/karashiiro/gittlz">
             Docker Hub

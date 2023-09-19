@@ -15,7 +15,7 @@ export function ButtonLink(
   },
 ) {
   return (
-    <div class="flex z-10 rounded-full shadow-md hover:shadow-lg duration-100 font-bold text-sm text-center">
+    <div class="flex rounded-full shadow-md hover:shadow-lg duration-100 font-bold text-sm text-center">
       <a
         class="rounded-full p-1 bg-blue-300 text-blue-900"
         tabIndex={0}
