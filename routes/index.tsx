@@ -3,7 +3,8 @@ import { ButtonLink } from "../components/ButtonLink.tsx";
 import { Profile } from "../components/Profile.tsx";
 import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-github.tsx";
 import IconBrandTwitter from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-twitter.tsx";
-import IconCurrencyDollar from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/currency-dollar.tsx"
+import IconBrandMastodon from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-mastodon.tsx";
+import IconCurrencyDollar from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/currency-dollar.tsx";
 
 type ExtractProps<T> = T extends (props: infer U) => JSX.Element ? U : never;
 
@@ -29,13 +30,16 @@ ButtonLinkList.Item = (
 
 function MyLinks() {
   return (
-    <nav class="m-auto md:ml-4 max-w-xs md:max-w-sm divide-dashed divide-y-2">
+    <nav class="m-auto md:ml-10 max-w-xs md:max-w-sm divide-dashed divide-y-2">
       <div class="flex flex-row space-x-1">
         <ButtonLink shape="circle" href="https://github.com/karashiiro">
           <IconBrandGithub />
         </ButtonLink>
         <ButtonLink shape="circle" href="https://twitter.com/karashiiro1">
           <IconBrandTwitter />
+        </ButtonLink>
+        <ButtonLink shape="circle" href="https://dogno.se/@karashiiro">
+          <IconBrandMastodon />
         </ButtonLink>
         <ButtonLink shape="circle" href="https://ko-fi.com/karashiiro">
           <IconCurrencyDollar />
@@ -188,7 +192,7 @@ export default function Home() {
             </div>
           </div>
           <div class="row-span-1">
-            <div class="my-3 md:ml-2 md:mt-[12vh] space-y-3">
+            <div class="my-3 md:ml-12 md:mt-[12vh] space-y-3">
               <h1
                 id="karashiiro"
                 class="text-4xl font-fancy font-semibold text-center md:text-start"
