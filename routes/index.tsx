@@ -3,6 +3,7 @@ import { ButtonLink } from "../components/ButtonLink.tsx";
 import { Profile } from "../components/Profile.tsx";
 import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-github.tsx";
 import IconBrandTwitter from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-twitter.tsx";
+import IconCurrencyDollar from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/currency-dollar.tsx"
 
 type ExtractProps<T> = T extends (props: infer U) => JSX.Element ? U : never;
 
@@ -35,6 +36,9 @@ function MyLinks() {
         </ButtonLink>
         <ButtonLink shape="circle" href="https://twitter.com/karashiiro1">
           <IconBrandTwitter />
+        </ButtonLink>
+        <ButtonLink shape="circle" href="https://ko-fi.com/karashiiro">
+          <IconCurrencyDollar />
         </ButtonLink>
       </div>
     </nav>
