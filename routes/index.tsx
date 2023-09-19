@@ -56,7 +56,7 @@ function ProjectCard(
           <h3 class="text-lg font-fancy">{name}</h3>
           <p>{description}</p>
         </div>
-        <div class="flex space-x-3 mt-1">
+        <div class="relative flex space-x-3 mt-1">
           {children}
         </div>
       </div>
@@ -78,6 +78,11 @@ function MyProjects() {
           <ButtonLink href="https://github.com/Universalis-FFXIV/Universalis">
             Repo
           </ButtonLink>
+          <div class="absolute right-3 bottom-0 space-x-1 text-lg">
+            <i class="devicon-csharp-plain" />
+            <i class="devicon-typescript-plain" />
+            <i class="devicon-rust-plain" />
+          </div>
         </ProjectCard>
       </div>
       <div class="mt-2 p-1">
@@ -91,6 +96,9 @@ function MyProjects() {
           <ButtonLink href="https://github.com/karashiiro/xiv-resources">
             Repo
           </ButtonLink>
+          <div class="absolute right-3 bottom-0 space-x-1 text-lg">
+            <i class="devicon-javascript-plain" />
+          </div>
         </ProjectCard>
       </div>
       <div class="mt-2 p-1">
@@ -104,16 +112,57 @@ function MyProjects() {
           <ButtonLink href="https://github.com/the-convocation/twitter-scraper">
             Repo
           </ButtonLink>
+          <div class="absolute right-3 bottom-0 space-x-1 text-lg">
+            <i class="devicon-typescript-plain" />
+          </div>
         </ProjectCard>
       </div>
       <div class="mt-2 p-1">
         <ProjectCard
-          name="godestone"
-          description="Go scraper for The Lodestone."
+          name="Lodestone When"
+          description="Estimate when a FFXIV character was created with just its Lodestone ID!"
         >
-          <ButtonLink href="https://github.com/xivapi/godestone">
+          <ButtonLink href="https://karashiiro.github.io/lodestone-when/">
+            Website
+          </ButtonLink>
+          <ButtonLink href="https://github.com/karashiiro/lodestone-id-time">
             Repo
           </ButtonLink>
+          <div class="absolute right-3 bottom-0 space-x-1 text-lg">
+            <i class="devicon-go-plain" />
+            <i class="devicon-python-plain" />
+            <i class="devicon-javascript-plain" />
+          </div>
+        </ProjectCard>
+      </div>
+      <div class="mt-2 p-1">
+        <ProjectCard
+          name="PSO2 Patch File Viewer"
+          description="Simple patch file viewer for PSO2."
+        >
+          <ButtonLink href="https://karashiiro.github.io/patch-tool">
+            Website
+          </ButtonLink>
+          <ButtonLink href="https://github.com/karashiiro/patch-tool">
+            Repo
+          </ButtonLink>
+          <div class="absolute right-3 bottom-0 space-x-1 text-lg">
+            <i class="devicon-typescript-plain" />
+            <i class="devicon-python-plain" />
+          </div>
+        </ProjectCard>
+      </div>
+      <div class="mt-2 p-1">
+        <ProjectCard
+          name="Gittlz"
+          description="A Git server for the laziest of us. Write and test your Git utilities without any hassle."
+        >
+          <ButtonLink href="https://github.com/karashiiro/gittlz">
+            Repo
+          </ButtonLink>
+          <div class="absolute right-3 bottom-0 space-x-1 text-lg">
+            <i class="devicon-go-plain" />
+          </div>
         </ProjectCard>
       </div>
     </div>
