@@ -31,7 +31,7 @@ ButtonLinkList.Item = (
 function MyLinks() {
   return (
     <nav class="m-auto md:ml-10 max-w-xs md:max-w-sm divide-dashed divide-y-2">
-      <div class="flex flex-row space-x-1">
+      <div class="flex flex-row place-content-evenly md:place-content-start space-x-1">
         <ButtonLink shape="circle" href="https://github.com/karashiiro">
           <IconBrandGithub />
         </ButtonLink>
