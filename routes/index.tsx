@@ -30,21 +30,19 @@ ButtonLinkList.Item = (
 
 function MyLinks() {
   return (
-    <nav class="m-auto sm:ml-10 max-w-xs sm:max-w-sm divide-dashed divide-y-2">
-      <div class="flex flex-row place-content-evenly sm:place-content-start space-x-1">
-        <ButtonLink shape="circle" href="https://github.com/karashiiro">
-          <IconBrandGithub />
-        </ButtonLink>
-        <ButtonLink shape="circle" href="https://twitter.com/karashiiro1">
-          <IconBrandTwitter />
-        </ButtonLink>
-        <ButtonLink shape="circle" href="https://dogno.se/@karashiiro">
-          <IconBrandMastodon />
-        </ButtonLink>
-        <ButtonLink shape="circle" href="https://ko-fi.com/karashiiro">
-          <IconCurrencyDollar />
-        </ButtonLink>
-      </div>
+    <nav class="flex flex-row place-content-evenly sm:place-content-start space-x-1">
+      <ButtonLink shape="circle" href="https://github.com/karashiiro">
+        <IconBrandGithub />
+      </ButtonLink>
+      <ButtonLink shape="circle" href="https://twitter.com/karashiiro1">
+        <IconBrandTwitter />
+      </ButtonLink>
+      <ButtonLink shape="circle" href="https://dogno.se/@karashiiro">
+        <IconBrandMastodon />
+      </ButtonLink>
+      <ButtonLink shape="circle" href="https://ko-fi.com/karashiiro">
+        <IconCurrencyDollar />
+      </ButtonLink>
     </nav>
   );
 }
@@ -215,20 +213,24 @@ export default function Home() {
     <div class="flex">
       <div class="mx-auto overflow-x-hidden">
         <div class="mt-[6vh] sm:mt-[16vh]" />
-        <div class="grid grid-cols-1 sm:grid-cols-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 items-end">
           <div class="row-span-2">
             <div class="mx-auto h-72 aspect-square">
               <Profile />
             </div>
           </div>
           <div class="row-span-1">
-            <div class="my-3 sm:ml-12 sm:mt-[12vh] space-y-3">
+            <div class="my-3 sm:ml-12 sm:mt-18">
               <h1
                 id="karashiiro"
                 class="text-4xl font-fancy font-semibold text-center sm:text-start"
               >
                 karashiiro
               </h1>
+            </div>
+          </div>
+          <div class="row-span-1 self-start">
+            <div class="sm:ml-20">
               <MyLinks />
             </div>
           </div>
