@@ -12,7 +12,7 @@ function ButtonLinkList({ children }: {
   children: ComponentChildren;
 }) {
   return (
-    <ul class="flex flex-wrap -mr-3 -mb-3 md:ml-4 list-none list-inside">
+    <ul class="flex flex-wrap -mr-3 -mb-3 sm:ml-4 list-none list-inside">
       {children}
     </ul>
   );
@@ -30,8 +30,8 @@ ButtonLinkList.Item = (
 
 function MyLinks() {
   return (
-    <nav class="m-auto md:ml-10 max-w-xs md:max-w-sm divide-dashed divide-y-2">
-      <div class="flex flex-row place-content-evenly md:place-content-start space-x-1">
+    <nav class="m-auto sm:ml-10 max-w-xs sm:max-w-sm divide-dashed divide-y-2">
+      <div class="flex flex-row place-content-evenly sm:place-content-start space-x-1">
         <ButtonLink shape="circle" href="https://github.com/karashiiro">
           <IconBrandGithub />
         </ButtonLink>
@@ -76,7 +76,7 @@ function MyProjects() {
   const langClasses =
     "absolute inline-grid grid-rows-2 grid-cols-3 -right-1 bottom-0 text-lg";
   return (
-    <div class="grid grid-cols-1 md:grid-cols-3">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
       <div class="mt-2 p-1">
         <ProjectCard
           name="Universalis"
@@ -214,18 +214,18 @@ export default function Home() {
   return (
     <div class="flex">
       <div class="mx-auto overflow-x-hidden">
-        <div class="mt-[6vh] md:mt-[16vh]" />
-        <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="mt-[6vh] sm:mt-[16vh]" />
+        <div class="grid grid-cols-1 sm:grid-cols-2">
           <div class="row-span-2">
             <div class="mx-auto h-72 aspect-square">
               <Profile />
             </div>
           </div>
           <div class="row-span-1">
-            <div class="my-3 md:ml-12 md:mt-[12vh] space-y-3">
+            <div class="my-3 sm:ml-12 sm:mt-[12vh] space-y-3">
               <h1
                 id="karashiiro"
-                class="text-4xl font-fancy font-semibold text-center md:text-start"
+                class="text-4xl font-fancy font-semibold text-center sm:text-start"
               >
                 karashiiro
               </h1>
@@ -233,11 +233,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div class="mt-2 md:mt-10 px-4 md:px-10">
+        <div class="mt-2 sm:mt-10 px-4 sm:px-10">
           <h2 class="text-xl font-fancy font-semibold">Projects</h2>
           <MyProjects />
         </div>
-        <div class="mt-[6vh] md:mt-0" />
+        <div class="mt-[6vh] sm:mt-0" />
       </div>
     </div>
   );
