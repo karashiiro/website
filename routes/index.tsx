@@ -31,16 +31,16 @@ ButtonLinkList.Item = (
 function MyLinks() {
   return (
     <nav class="flex flex-row place-content-evenly sm:place-content-start space-x-1">
-      <ButtonLink shape="circle" href="https://github.com/karashiiro">
+      <ButtonLink shape="circle" href="https://github.com/karashiiro" ariaLabel="GitHub profile">
         <IconBrandGithub />
       </ButtonLink>
-      <ButtonLink shape="circle" href="https://twitter.com/karashiiro1">
+      <ButtonLink shape="circle" href="https://twitter.com/karashiiro1" ariaLabel="Twitter profile">
         <IconBrandTwitter />
       </ButtonLink>
-      <ButtonLink shape="circle" href="https://dogno.se/@karashiiro">
+      <ButtonLink shape="circle" href="https://dogno.se/@karashiiro" ariaLabel="GitHub profile">
         <IconBrandMastodon />
       </ButtonLink>
-      <ButtonLink shape="circle" href="https://ko-fi.com/karashiiro">
+      <ButtonLink shape="circle" href="https://ko-fi.com/karashiiro" ariaLabel="Ko-fi page">
         <IconCurrencyDollar />
       </ButtonLink>
     </nav>
@@ -88,10 +88,10 @@ function MyProjects() {
             <i title="Rust" class="devicon-rust-plain" />
             <i title="Docker" class="devicon-docker-plain" />
           </div>
-          <ButtonLink href="https://universalis.app">
+          <ButtonLink href="https://universalis.app" ariaLabel="Universalis">
             Website
           </ButtonLink>
-          <ButtonLink href="https://github.com/Universalis-FFXIV/Universalis">
+          <ButtonLink href="https://github.com/Universalis-FFXIV/Universalis" ariaLabel="Universalis GitHub repository">
             Repo
           </ButtonLink>
         </ProjectCard>
@@ -109,10 +109,10 @@ function MyProjects() {
             <i />
             <i title="JavaScript" class="devicon-javascript-plain" />
           </div>
-          <ButtonLink href="https://karashiiro.github.io/xiv-resources/">
+          <ButtonLink href="https://karashiiro.github.io/xiv-resources/" ariaLabel="XIV Resources">
             Website
           </ButtonLink>
-          <ButtonLink href="https://github.com/karashiiro/xiv-resources">
+          <ButtonLink href="https://github.com/karashiiro/xiv-resources" ariaLabel="XIV Resources GitHub repository">
             Repo
           </ButtonLink>
         </ProjectCard>
@@ -130,10 +130,10 @@ function MyProjects() {
             <i title="Python" class="devicon-python-plain" />
             <i title="JavaScript" class="devicon-javascript-plain" />
           </div>
-          <ButtonLink href="https://karashiiro.github.io/lodestone-when/">
+          <ButtonLink href="https://karashiiro.github.io/lodestone-when/" ariaLabel="Lodestone When">
             Website
           </ButtonLink>
-          <ButtonLink href="https://github.com/karashiiro/lodestone-id-time">
+          <ButtonLink href="https://github.com/karashiiro/lodestone-id-time" ariaLabel="Lodestone When GitHub repository">
             Repo
           </ButtonLink>
         </ProjectCard>
@@ -154,10 +154,10 @@ function MyProjects() {
               class="devicon-amazonwebservices-plain"
             />
           </div>
-          <ButtonLink href="https://karashiiro.github.io/patch-tool">
+          <ButtonLink href="https://karashiiro.github.io/patch-tool" ariaLabel="PSO2 Patch Tool">
             Website
           </ButtonLink>
-          <ButtonLink href="https://github.com/karashiiro/patch-tool">
+          <ButtonLink href="https://github.com/karashiiro/patch-tool" ariaLabel="PSO2 Patch Tool GitHub repository">
             Repo
           </ButtonLink>
         </ProjectCard>
@@ -175,10 +175,10 @@ function MyProjects() {
             <i />
             <i title="TypeScript" class="devicon-typescript-plain" />
           </div>
-          <ButtonLink href="https://www.npmjs.com/package/@the-convocation/twitter-scraper">
+          <ButtonLink href="https://www.npmjs.com/package/@the-convocation/twitter-scraper" ariaLabel="Twitter Scraper NPM package">
             npm
           </ButtonLink>
-          <ButtonLink href="https://github.com/the-convocation/twitter-scraper">
+          <ButtonLink href="https://github.com/the-convocation/twitter-scraper" ariaLabel="Twitter Scraper GitHub repository">
             Repo
           </ButtonLink>
         </ProjectCard>
@@ -196,10 +196,10 @@ function MyProjects() {
             <i title="Git" class="devicon-git-plain" />
             <i title="Docker" class="devicon-docker-plain" />
           </div>
-          <ButtonLink href="https://hub.docker.com/r/karashiiro/gittlz">
+          <ButtonLink href="https://hub.docker.com/r/karashiiro/gittlz" ariaLabel="Gittlz Docker image">
             Docker Hub
           </ButtonLink>
-          <ButtonLink href="https://github.com/karashiiro/gittlz">
+          <ButtonLink href="https://github.com/karashiiro/gittlz" ariaLabel="Gittlz GitHub repository">
             Repo
           </ButtonLink>
         </ProjectCard>
