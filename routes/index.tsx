@@ -1,10 +1,10 @@
 import { ComponentChildren, JSX } from "preact";
 import { ButtonLink } from "../components/ButtonLink.tsx";
 import { Profile } from "../components/Profile.tsx";
-import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-github.tsx";
-import IconBrandTwitter from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-twitter.tsx";
-import IconBrandMastodon from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/brand-mastodon.tsx";
-import IconCurrencyDollar from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/currency-dollar.tsx";
+import IconBrandGithub from "tabler_icons_tsx/tsx/brand-github.tsx";
+import IconBrandTwitter from "tabler_icons_tsx/tsx/brand-twitter.tsx";
+import IconBrandMastodon from "tabler_icons_tsx/tsx/brand-mastodon.tsx";
+import IconCurrencyDollar from "tabler_icons_tsx/tsx/currency-dollar.tsx";
 
 type ExtractProps<T> = T extends (props: infer U) => JSX.Element ? U : never;
 
