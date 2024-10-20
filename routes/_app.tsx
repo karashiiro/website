@@ -1,6 +1,6 @@
-import { AppProps } from "$fresh/server.ts";
+import { PageProps } from "$fresh/server.ts";
 
-export default function App({ Component }: AppProps) {
+export default function App({ Component }: PageProps) {
   return (
     <html>
       <head>
@@ -9,6 +9,12 @@ export default function App({ Component }: AppProps) {
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        />
+        <link
+          rel="preload"
+          fetchPriority="high"
+          as="image"
+          href="https://avatars.githubusercontent.com/u/49822414?v=4"
         />
         <link rel="stylesheet" href="/styles.css" />
         <title>karashiiro</title>
