@@ -1,8 +1,8 @@
 import { ComponentChildren, JSX } from "preact";
 import { ButtonLink } from "../components/ButtonLink.tsx";
 import { Profile } from "../components/Profile.tsx";
+import IconBrandBluesky from "tabler_icons_tsx/tsx/brand-bluesky.tsx";
 import IconBrandGithub from "tabler_icons_tsx/tsx/brand-github.tsx";
-import IconBrandTwitter from "tabler_icons_tsx/tsx/brand-twitter.tsx";
 import IconBrandMastodon from "tabler_icons_tsx/tsx/brand-mastodon.tsx";
 import IconCurrencyDollar from "tabler_icons_tsx/tsx/currency-dollar.tsx";
 
@@ -34,10 +34,10 @@ function MyLinks() {
       <ButtonLink shape="circle" href="https://github.com/karashiiro" ariaLabel="GitHub profile">
         <IconBrandGithub />
       </ButtonLink>
-      <ButtonLink shape="circle" href="https://twitter.com/karashiiro1" ariaLabel="Twitter profile">
-        <IconBrandTwitter />
+      <ButtonLink shape="circle" href="https://bsky.app/profile/karashiiro.moe" ariaLabel="Bluesky profile">
+        <IconBrandBluesky />
       </ButtonLink>
-      <ButtonLink shape="circle" href="https://dogno.se/@karashiiro" ariaLabel="GitHub profile">
+      <ButtonLink shape="circle" href="https://dogno.se/@karashiiro" ariaLabel="Mastodon profile">
         <IconBrandMastodon />
       </ButtonLink>
       <ButtonLink shape="circle" href="https://ko-fi.com/karashiiro" ariaLabel="Ko-fi page">
