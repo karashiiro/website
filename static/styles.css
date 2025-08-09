@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes slowScroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px 100px;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url('/bg_tile.png');
+  background-repeat: repeat;
+  opacity: 0.05;
+  z-index: -1;
+  pointer-events: none;
+  animation: slowScroll 60s linear infinite;
+}
