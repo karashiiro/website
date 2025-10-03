@@ -119,21 +119,21 @@ function MyProjects() {
       </div>
       <div class="mt-2 p-1">
         <ProjectCard
-          name="Lodestone When"
-          description="Estimate when a FFXIV character was created with just its Lodestone ID!"
+          name="KPaste"
+          description="Share code and text snippets with syntax highlighting, paste management, and easy sharing. Built on ATProto."
         >
           <div class={langClasses}>
             <i />
             <i />
             <i />
-            <i title="Go" class="devicon-go-plain" />
-            <i title="Python" class="devicon-python-plain" />
-            <i title="JavaScript" class="devicon-javascript-plain" />
+            <i />
+            <i title="React" class="devicon-react-plain" />
+            <i title="TypeScript" class="devicon-typescript-plain" />
           </div>
-          <ButtonLink href="https://karashiiro.github.io/lodestone-when/" ariaLabel="Lodestone When">
+          <ButtonLink href="https://kp.krs.moe/" ariaLabel="KPaste">
             Website
           </ButtonLink>
-          <ButtonLink href="https://github.com/karashiiro/lodestone-id-time" ariaLabel="Lodestone When GitHub repository">
+          <ButtonLink href="https://github.com/karashiiro/kpaste" ariaLabel="KPaste GitHub repository">
             Repo
           </ButtonLink>
         </ProjectCard>
