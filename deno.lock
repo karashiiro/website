@@ -1230,7 +1230,7 @@
     "https://esm.sh/@babel/helper-validator-identifier@7.22.20/denonext/helper-validator-identifier.mjs": "f765fd69eb4fd81b839b76bf60f227caac4fe4d41b4c646cc08aa7b8d948fe17",
     "https://esm.sh/preact@10.24.3": "2f38aa62496da4b9bf12c04f799b0770249ce26dbe04f0ed6434f233fc8469d2",
     "https://esm.sh/preact@10.24.3/debug": "b1ea8575aa814153388fd94d9a0e7e436ac080889dc6cc91c81ce7d1936c42a0",
-    "https://esm.sh/preact@10.24.3/denonext/debug.mjs": "04a0cba9699c69fd481d2889b0fef9bf93c86ad3cd6541b9158fdce9b5365cf5",
+    "https://esm.sh/preact@10.24.3/denonext/debug.mjs": "0b70b4378bd602b38605bd128a3e00fb47ef4b8e5b3fb231032a971ef0d84be8",
     "https://esm.sh/preact@10.24.3/denonext/devtools.mjs": "0d47c1c549e313bf296268617cfd6c389870879d5b3b4a0d840e44e1222b18d9",
     "https://esm.sh/preact@10.24.3/denonext/hooks.mjs": "47a72a310770ed106af62fc053dcddacccbeddd6359d4cddff1c5421ed3d9a30",
     "https://esm.sh/preact@10.24.3/denonext/jsx-runtime.mjs": "ca825d2a43bb02f60cf9706c62037a9cf1d749dccc169404aa1d4510fbbb18d3",
