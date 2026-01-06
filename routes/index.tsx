@@ -164,8 +164,8 @@ function MyProjects() {
       </div>
       <div class="mt-2 p-1">
         <ProjectCard
-          name="twitter-scraper"
-          description="A port of n0madic's Go Twitter scraping library to Node.js."
+          name="TextToTalk"
+          description="Chat TTS plugin for Dalamud. Has support for triggers/exclusions, several TTS providers, and more!"
         >
           <div class={langClasses}>
             <i />
@@ -173,12 +173,9 @@ function MyProjects() {
             <i />
             <i />
             <i />
-            <i title="TypeScript" class="devicon-typescript-plain" />
+            <i title="C#" class="devicon-csharp-plain" />
           </div>
-          <ButtonLink href="https://www.npmjs.com/package/@the-convocation/twitter-scraper" ariaLabel="Twitter Scraper NPM package">
-            npm
-          </ButtonLink>
-          <ButtonLink href="https://github.com/the-convocation/twitter-scraper" ariaLabel="Twitter Scraper GitHub repository">
+          <ButtonLink href="https://github.com/karashiiro/TextToTalk" ariaLabel="TextToTalk GitHub repository">
             Repo
           </ButtonLink>
         </ProjectCard>
